@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   
+    
+    <form method="post">
+
+        <style>
+            p {
+                background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fdesktop-wallpaper-flhbq&psig=AOvVaw3EjhmaKn-YnVNdu_IsEqRJ&ust=1693918774562000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCJCP6a6BkYEDFQAAAAAdAAAAABAD');
+            }
+        </style>
+        <div>
+            <lable for="txtName">Name:</lable>
+            <input id="txtName" placeholer="Enter Name" required type="text" />
+        </div>
+        <div>
+            <lable for="txtpassword">Password:</lable>
+            <input id="txtpassword" placeholer="Enter Password" required type="password" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>

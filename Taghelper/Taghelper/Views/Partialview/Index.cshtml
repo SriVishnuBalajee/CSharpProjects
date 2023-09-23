@@ -1,0 +1,16 @@
+﻿<div>
+	@{
+		var all_route_parms = new Dictionary<string, string>
+		{
+			{"x","200"} ,{"y","50"}
+		};
+	}
+</div>
+<div>
+	<a asp-action="Add" asp-controller="Calc" asp-route-x="258" asp-route-y="6">CallAdd asp-route</a>
+
+</div>
+<div>
+	<a asp-action="Add" asp-controller="Calc" asp-all-route-data="all_route_parms">CallAdd all_route_parms</a>
+</div>
+

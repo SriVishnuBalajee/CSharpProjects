@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<form action="Home/DoLogin">
+    <div>
+        <div>
+            <label for="txtUser">User Name:</label>
+            <input type="text" name="txtUser" id="txtUser" required placeholder="Enter UserID" />
+        </div>
+        <div>
+            <label for="txtpwd">Password:</label>
+            <input type="password" name="txtpwd" id="txtpwd" required placeholder="Enter Password" />
+        </div>
+        <div>
+            <input type="submit" value="Login" />
+        </div>
+        
+    </div>
+</form>
+<div>
+    <a href="Home/SayHello?name=Vishnu">Sayhello</a>
+</div>
+<div>
+    <a href="Home/Add?x=100&y=200">Add</a>
+</div>
+<div>
+    <a href="Home/Multiply?x=10&y=2">Multiply</a>
+</div>
+<div>
+    <a href="Home/Divide?x=30&y=3">Divide</a>
+</div>
+<div>
+    <a href="Home/AddNewBook">New Book</a>
+</div>
+<div>
+    <a href="Home/ListAllBook">All Books</a>
+</div>
+<div>
+    <a href="VAuthor">AuthorList</a>
+</div>
+<div>
+    <a href="Emp">EmpList</a>
+</div>
